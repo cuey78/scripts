@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # lists all Devices and there IOMMU Groups in the same colour so can be easy read
+#clear screen
+clear
 
 # Array of color codes
 colors=(
