@@ -83,7 +83,7 @@ display_menu() {
     fi
 
     action=$(dialog --clear --backtitle "NordVPN Menu" --title "Main Menu" \
-        --menu "VPN Status:\n$vpn_status\n\nChoose an option:" 20 70 30 \
+        --nocancel --menu "VPN Status:\n$vpn_status\n\nChoose an option:" 20 70 30 \
         1 "Connect to VPN" \
         2 "Disconnect from VPN" \
         3 "Exit" 2>&1 >/dev/tty)
