@@ -1,8 +1,13 @@
 #!/bin/bash
+#####################################################################################################
+##                           My VPN Script for NordVPN cli tool                                    ##
+##                                                                                                 ##
+#####################################################################################################
 
 # Check if nordvpn is installed
 if ! command -v nordvpn &> /dev/null; then
     dialog --msgbox "NordVPN command not found. Please install NordVPN and try again." 10 30
+    clear
     exit 1
 fi
 
